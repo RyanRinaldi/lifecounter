@@ -19,6 +19,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="20dp" />
 
     <TextView
@@ -27,10 +28,11 @@
         android:text="Player 2"
         android:id="@+id/player2Name"
         android:textSize="25dp"
+        android:layout_marginRight="10dp"
         android:layout_below="@+id/player1Name"
         android:layout_alignLeft="@+id/player1Name"
         android:layout_alignStart="@+id/player1Name"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="40dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,10 +40,11 @@
         android:text="Player 3"
         android:id="@+id/player3Name"
         android:textSize="25dp"
+        android:layout_marginRight="10dp"
         android:layout_below="@+id/player2Name"
         android:layout_alignLeft="@+id/player2Name"
         android:layout_alignStart="@+id/player2Name"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="40dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,21 +52,11 @@
         android:text="Player 4"
         android:id="@+id/player4Name"
         android:textSize="25dp"
+        android:layout_marginRight="10dp"
         android:layout_below="@+id/player3Name"
         android:layout_alignLeft="@+id/player3Name"
         android:layout_alignStart="@+id/player3Name"
-        android:layout_marginTop="80dp" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="test"
-        android:id="@+id/playerLose"
-        android:textSize="25dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/player4Name"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="40dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -123,26 +116,26 @@
         android:layout_height="wrap_content"
         android:text="- 5"
         android:id="@+id/player1Minus5"
-        android:layout_below="@+id/player1Name"
-        android:layout_alignLeft="@+id/player1Name"
-        android:layout_alignStart="@+id/player1Name" />
+        android:layout_toLeftOf="@+id/player1Minus"
+        android:layout_alignBottom="@+id/player1Name"
+        />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="-"
         android:id="@+id/player1Minus"
-        android:layout_below="@+id/player1Name"
-        android:layout_toRightOf="@+id/player1Minus5"
-         />
+        android:layout_alignBottom="@+id/player1Name"
+        android:layout_toLeftOf="@+id/player1Plus"
+        />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="+"
         android:id="@+id/player1Plus"
-        android:layout_below="@+id/player1Name"
-        android:layout_toRightOf="@+id/player1Minus"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/player1Name"
         />
 
     <Button
@@ -150,8 +143,8 @@
         android:layout_height="wrap_content"
         android:text="+ 5"
         android:id="@+id/player1Plus5"
-        android:layout_below="@+id/player1Name"
         android:layout_toRightOf="@+id/player1Plus"
+        android:layout_alignBottom="@+id/player1Name"
         />
 
 
@@ -161,17 +154,17 @@
         android:layout_height="wrap_content"
         android:text="- 5"
         android:id="@+id/player2Minus5"
-        android:layout_below="@+id/player2Name"
-        android:layout_alignLeft="@+id/player2Name"
-        android:layout_alignStart="@+id/player2Name" />
+        android:layout_toLeftOf="@+id/player2Minus"
+        android:layout_alignBottom="@+id/player2Name"
+        />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="-"
         android:id="@+id/player2Minus"
-        android:layout_below="@+id/player2Name"
-        android:layout_toRightOf="@+id/player2Minus5"
+        android:layout_toLeftOf="@+id/player2Plus"
+        android:layout_alignBottom="@+id/player2Name"
         />
 
     <Button
@@ -179,8 +172,8 @@
         android:layout_height="wrap_content"
         android:text="+"
         android:id="@+id/player2Plus"
-        android:layout_below="@+id/player2Name"
-        android:layout_toRightOf="@+id/player2Minus"
+        android:layout_alignBottom="@+id/player2Name"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -188,8 +181,8 @@
         android:layout_height="wrap_content"
         android:text="+ 5"
         android:id="@+id/player2Plus5"
-        android:layout_below="@+id/player2Name"
         android:layout_toRightOf="@+id/player2Plus"
+        android:layout_alignBottom="@+id/player2Name"
         />
 
 
@@ -198,17 +191,17 @@
         android:layout_height="wrap_content"
         android:text="- 5"
         android:id="@+id/player3Minus5"
-        android:layout_below="@+id/player3Name"
-        android:layout_alignLeft="@+id/player3Name"
-        android:layout_alignStart="@+id/player3Name" />
+        android:layout_toLeftOf="@+id/player3Minus"
+        android:layout_alignBottom="@+id/player3Name"
+        />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="-"
         android:id="@+id/player3Minus"
-        android:layout_below="@+id/player3Name"
-        android:layout_toRightOf="@+id/player3Minus5"
+        android:layout_toLeftOf="@+id/player3Plus"
+        android:layout_alignBottom="@+id/player3Name"
         />
 
     <Button
@@ -216,8 +209,8 @@
         android:layout_height="wrap_content"
         android:text="+"
         android:id="@+id/player3Plus"
-        android:layout_below="@+id/player3Name"
-        android:layout_toRightOf="@+id/player3Minus"
+        android:layout_alignBottom="@+id/player3Name"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -225,10 +218,9 @@
         android:layout_height="wrap_content"
         android:text="+ 5"
         android:id="@+id/player3Plus5"
-        android:layout_below="@+id/player3Name"
         android:layout_toRightOf="@+id/player3Plus"
+        android:layout_alignBottom="@+id/player3Name"
         />
-
 
 
     <Button
@@ -236,17 +228,17 @@
         android:layout_height="wrap_content"
         android:text="- 5"
         android:id="@+id/player4Minus5"
-        android:layout_below="@+id/player4Name"
-        android:layout_alignLeft="@+id/player4Name"
-        android:layout_alignStart="@+id/player4Name" />
+        android:layout_toLeftOf="@+id/player4Minus"
+        android:layout_alignBottom="@+id/player4Name"
+        />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="-"
         android:id="@+id/player4Minus"
-        android:layout_below="@+id/player4Name"
-        android:layout_toRightOf="@+id/player4Minus5"
+        android:layout_toLeftOf="@+id/player4Plus"
+        android:layout_alignBottom="@+id/player4Name"
         />
 
     <Button
@@ -254,8 +246,8 @@
         android:layout_height="wrap_content"
         android:text="+"
         android:id="@+id/player4Plus"
-        android:layout_below="@+id/player4Name"
-        android:layout_toRightOf="@+id/player4Minus"
+        android:layout_alignBottom="@+id/player4Name"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -263,8 +255,7 @@
         android:layout_height="wrap_content"
         android:text="+ 5"
         android:id="@+id/player4Plus5"
-        android:layout_below="@+id/player4Name"
         android:layout_toRightOf="@+id/player4Plus"
+        android:layout_alignBottom="@+id/player4Name"
         />
-
 </RelativeLayout>
